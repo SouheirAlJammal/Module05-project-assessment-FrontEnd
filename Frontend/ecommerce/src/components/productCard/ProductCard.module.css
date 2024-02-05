@@ -1,0 +1,104 @@
+.cardContainer {
+    transition: box-shadow 0.3s;
+    width: 250px;
+    max-height: 350px;
+    border: 1px solid white;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background-color: white;
+    margin-bottom: 7%;
+    padding-bottom: 15px;
+  }
+  .cardContainer:hover {
+    box-shadow: 0 0 15px rgba(0,0,0,0.3); 
+  }
+
+  .image {
+    width: 120px;
+    height: 120px;
+    object-fit: cover; 
+    z-index: 1;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+  }
+  .description {
+    color: #5a5a5a;
+    font-size: 0.9rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    width: 200px;
+    word-wrap: break-word; 
+    min-height: 40px;
+  }
+  .PricingPart {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+  }
+  
+  .priceContainer{
+      margin-left: 10px;
+      display: flex;
+      width: 35%;
+      align-items: center;
+      justify-content: space-between;
+  }
+  
+  .originalPrice,
+  .discoutedPrice {
+    display: inline-block;
+    font-size: 1.5rem;
+  }
+  
+  .originalPrice{
+    position: relative;
+    padding-right: 5px;
+    color: #000;
+  }
+  .originalPriceDiscount{
+    color: rgb(127, 127, 127);
+  }
+
+  .productName {
+    color: #000;
+    font-size: 1.4rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 10px;
+    width: 95%;
+    min-height: 10px;
+  
+  }
+  .buy{
+    padding: 8px 30px;
+    border: 1px solid var(--primary-color);
+    background-color: #a2b72c;
+    color: white;
+    border-radius: 3px;
+    transition: all 0.3s ease;
+    cursor: pointer;
+  }
+  @media only screen and (max-width: 480px) {
+    .cardContainer{
+      width: 240px;
+      height: 350px;
+    }
+    .image{
+        width: 120px;
+        height: 120px;
+    }
+    .priceContainer{
+      width:40%
+    }
+    .description{
+      font-size: 0.8rem;
+      width: 220px;
+    }
+    .productName{
+      font-size: 1.3rem;
+    }
+  }
